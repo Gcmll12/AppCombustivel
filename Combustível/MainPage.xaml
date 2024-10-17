@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Combustível.MainPage"
+             Title=""
+             >
+    <Frame Padding="50"
+         BackgroundColor="Transparent"
+         BorderColor="BlueViolet">
+        <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+          
+
+
+
+
+                <Label Text="Adicione o preço de cada combustível para ver qual compensa mais"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="BlueViolet"
+                   FontSize="Title"/>
+            
+
+            <Label Text="Preço Etanol:"/>
+            <Entry x:Name =  "Etanol_TXT" Placeholder = "R$"/>
+
+
+            <Label Text="Preço Gasolina:" />
+            <Entry x:Name=  "Gasolina_TXT" Placeholder = "R$"/>
+            
+            <Button  Text ="Calcular" Clicked="Button_Calcular"/>
+
+           
+        </VerticalStackLayout>
+    </ScrollView>
+    </Frame>
+</ContentPage>
